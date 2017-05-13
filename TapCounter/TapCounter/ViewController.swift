@@ -30,7 +30,6 @@ class ViewController: UIViewController {
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
-		//self.navigationController?.navigationBar.barTintColor = UIColor.white
 		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
 		self.navigationController?.navigationBar.shadowImage = UIImage()
 		self.navigationController?.navigationBar.isTranslucent = true

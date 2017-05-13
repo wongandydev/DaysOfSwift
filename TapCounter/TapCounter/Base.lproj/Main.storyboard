@@ -12,8 +12,8 @@
         <!--Navigation Controller-->
         <scene sceneID="OsH-WV-Fyr">
             <objects>
-                <navigationController id="ccJ-hg-G0N" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dux-Z5-uF7">
+                <navigationController modalPresentationStyle="currentContext" id="ccJ-hg-G0N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="dux-Z5-uF7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -34,11 +34,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-2X-IM8">
-                                <rect key="frame" x="123" y="287" width="129" height="72"/>
+                                <rect key="frame" x="123" y="223" width="129" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="129" id="PRe-u8-j3O"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivv-M1-fGz">
-                                <rect key="frame" x="172" y="458" width="30" height="30"/>
+                                <rect key="frame" x="172" y="394" width="30" height="30"/>
                                 <state key="normal" title="Tap"/>
                                 <connections>
                                     <action selector="tapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exY-01-brd"/>
