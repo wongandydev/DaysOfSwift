@@ -31,9 +31,9 @@ class ViewController: UIViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		//self.navigationController?.navigationBar.barTintColor = UIColor.white
-		let img = UIImage()
-		navigationController?.navigationBar.setBackgroundImage(img, for: UIBarMetrics.default)
-		navigationController?.navigationBar.shadowImage = img
+		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+		self.navigationController?.navigationBar.shadowImage = UIImage()
+		self.navigationController?.navigationBar.isTranslucent = true
 	}
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
