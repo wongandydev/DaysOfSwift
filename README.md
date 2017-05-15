@@ -7,6 +7,8 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 
 1. [01_TapCounter](https://github.com/wongandydev/DaysOfSwift/tree/master/TapCounter)
 
+- I created a tutorial with steps to making this app. Click [here](http://bit.ly/2pvjLoZ) to read the tutorial!
+
 **Proj_02: May 13,2017 --> ???**
 
 1. [02_TipCalculator](https://github.com/wongandydev/DaysOfSwift/tree/master/TipCalculator)
