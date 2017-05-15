@@ -1,9 +1,12 @@
 # DaysOfSwift
-## My attempt at working on make a bunch of Apps.
-------
-Inspired by Allen Wong's 30DaysOFSwift project and Sam Lu's 100DaysOfSwift, out of my own curiousity of how far I can push myself to get something done everyday; I am also going to attempt this.
+## *My attempt at working on Swift projects daily.*
 
-**Day 1: May 13:2017**
+Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSwift) project and Sam Lu's [100DaysOfSwift](http://samvlu.com), I set out to do something similar. With my bootcamp experience at Make School (Summer Academy 2016), I want to see how far I can push myself to create new projects or work on Swift projects everyday. Here is my work so far:
+
+**Proj_01: May 13,2017**
 
 1. [01_TapCounter](https://github.com/wongandydev/DaysOfSwift/tree/master/TapCounter)
-2. [02_TipCalculator](https://github.com/wongandydev/DaysOfSwift/tree/master/TipCalculator)
+
+**Proj_02: May 13,2017 --> ???**
+
+1. [02_TipCalculator](https://github.com/wongandydev/DaysOfSwift/tree/master/TipCalculator)
