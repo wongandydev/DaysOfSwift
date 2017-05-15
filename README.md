@@ -6,4 +6,4 @@ Inspired by Allen Wong's 30DaysOFSwift project and Sam Lu's 100DaysOfSwift, out 
 **Day 1: May 13:2017**
 
 1. [01_TapCounter](https://github.com/wongandydev/DaysOfSwift/tree/master/TapCounter)
-2. [02_iAdBanner](https://github.com/wongandydev/DaysOfSwift/tree/master/iAdBanner)
+2. [02_TipCalculator](https://github.com/wongandydev/DaysOfSwift/tree/master/TipCalculator)
