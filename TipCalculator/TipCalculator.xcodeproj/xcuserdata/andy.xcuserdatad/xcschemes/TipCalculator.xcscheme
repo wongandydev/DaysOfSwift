@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A10CC1121EC94C3D00B03A40"
-               BuildableName = "iAdBanner.app"
-               BlueprintName = "iAdBanner"
-               ReferencedContainer = "container:iAdBanner.xcodeproj">
+               BlueprintIdentifier = "A1AF95521ECA6726006183AB"
+               BuildableName = "TipCalculator.app"
+               BlueprintName = "TipCalculator"
+               ReferencedContainer = "container:TipCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A10CC1261EC94C3D00B03A40"
-               BuildableName = "iAdBannerTests.xctest"
-               BlueprintName = "iAdBannerTests"
-               ReferencedContainer = "container:iAdBanner.xcodeproj">
+               BlueprintIdentifier = "A1AF95661ECA6726006183AB"
+               BuildableName = "TipCalculatorTests.xctest"
+               BlueprintName = "TipCalculatorTests"
+               ReferencedContainer = "container:TipCalculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A10CC1311EC94C3D00B03A40"
-               BuildableName = "iAdBannerUITests.xctest"
-               BlueprintName = "iAdBannerUITests"
-               ReferencedContainer = "container:iAdBanner.xcodeproj">
+               BlueprintIdentifier = "A1AF95711ECA6726006183AB"
+               BuildableName = "TipCalculatorUITests.xctest"
+               BlueprintName = "TipCalculatorUITests"
+               ReferencedContainer = "container:TipCalculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A10CC1121EC94C3D00B03A40"
-            BuildableName = "iAdBanner.app"
-            BlueprintName = "iAdBanner"
-            ReferencedContainer = "container:iAdBanner.xcodeproj">
+            BlueprintIdentifier = "A1AF95521ECA6726006183AB"
+            BuildableName = "TipCalculator.app"
+            BlueprintName = "TipCalculator"
+            ReferencedContainer = "container:TipCalculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A10CC1121EC94C3D00B03A40"
-            BuildableName = "iAdBanner.app"
-            BlueprintName = "iAdBanner"
-            ReferencedContainer = "container:iAdBanner.xcodeproj">
+            BlueprintIdentifier = "A1AF95521ECA6726006183AB"
+            BuildableName = "TipCalculator.app"
+            BlueprintName = "TipCalculator"
+            ReferencedContainer = "container:TipCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A10CC1121EC94C3D00B03A40"
-            BuildableName = "iAdBanner.app"
-            BlueprintName = "iAdBanner"
-            ReferencedContainer = "container:iAdBanner.xcodeproj">
+            BlueprintIdentifier = "A1AF95521ECA6726006183AB"
+            BuildableName = "TipCalculator.app"
+            BlueprintName = "TipCalculator"
+            ReferencedContainer = "container:TipCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

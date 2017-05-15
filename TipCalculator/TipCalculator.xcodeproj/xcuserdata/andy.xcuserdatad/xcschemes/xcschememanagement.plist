@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iAdBanner.xcscheme</key>
+		<key>TipCalculator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A10CC1121EC94C3D00B03A40</key>
+		<key>A1AF95521ECA6726006183AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A10CC1261EC94C3D00B03A40</key>
+		<key>A1AF95661ECA6726006183AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A10CC1311EC94C3D00B03A40</key>
+		<key>A1AF95711ECA6726006183AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

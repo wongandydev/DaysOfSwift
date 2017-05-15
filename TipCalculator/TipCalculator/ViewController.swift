@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  iAdBanner
+//  TipCalculator
 //
-//  Created by Andy Wong on 5/14/17.
+//  Created by Andy Wong on 5/15/17.
 //  Copyright © 2017 Andy Wong. All rights reserved.
 //
 

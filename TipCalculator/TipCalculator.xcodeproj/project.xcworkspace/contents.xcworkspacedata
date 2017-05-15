@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iAdBanner.xcodeproj">
+      location = "self:TipCalculator.xcodeproj">
    </FileRef>
 </Workspace>

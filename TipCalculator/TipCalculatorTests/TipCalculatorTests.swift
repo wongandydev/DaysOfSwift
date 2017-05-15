@@ -1,15 +1,15 @@
 //
-//  iAdBannerTests.swift
-//  iAdBannerTests
+//  TipCalculatorTests.swift
+//  TipCalculatorTests
 //
-//  Created by Andy Wong on 5/14/17.
+//  Created by Andy Wong on 5/15/17.
 //  Copyright © 2017 Andy Wong. All rights reserved.
 //
 
 import XCTest
-@testable import iAdBanner
+@testable import TipCalculator
 
-class iAdBannerTests: XCTestCase {
+class TipCalculatorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
