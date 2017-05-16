@@ -14,3 +14,6 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 **Proj_02: May 13,2017 --> ???**
 
 1. [02_TipCalculator](https://github.com/wongandydev/DaysOfSwift/tree/master/TipCalculator)
+
+What I have currently:
+![](https://github.com/wongandydev/DaysOfSwift/blob/master/TipCalculator/stage1.png)
