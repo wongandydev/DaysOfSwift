@@ -16,6 +16,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 	@IBOutlet weak var tipSlider: UISlider!
 	@IBOutlet weak var totalLabel: UILabel!
 	@IBOutlet weak var tipSliderResultLabel: UILabel!
+	@IBOutlet weak var splitTotalBill: UILabel!
 	
 	@IBAction func tipSliderMoved(_ sender: Any) {
 		let value = tipSlider.value
@@ -30,6 +31,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 		balanceTextField.delegate = self
 		splitTextField.delegate = self
 		//tapGestureRecognizer
+		calculateTip()
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -38,17 +40,18 @@ class ViewController: UIViewController,UITextFieldDelegate {
 	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		view.endEditing(true) 
+		view.endEditing(true)
 	}
+	
 	func calculateTip(){
 		guard let balance = Double(balanceTextField.text!)
 			else{
-				balanceTextField.text = "$0.00"
-				splitTextField.text = "0"
-				totalLabel.text = "$0.00"
+				balanceTextField.text = ""
+				splitTextField.text = ""
+				totalLabel.text = ""
 				return
 		}
-		
+	
 		let roundedBillAmount = round(100*balance)/100
 		let tipAmount = roundedBillAmount * Double(tipSlider.value)/100//percentages(grabbed from slider or text field?
 		let roundedTipAmount = round(100*tipAmount)/100
@@ -56,8 +59,25 @@ class ViewController: UIViewController,UITextFieldDelegate {
 		tipLabel.text = "$" + String(format: "%.2f", roundedTipAmount)
 		totalLabel.text = "$" + String(format: "%.2f", total)
 		
+		guard let splitNumber = Double(splitTextField.text!)
+			else{
+				splitTextField.text = ""
+				splitTotalBill.text = "$" + String(format: "%.2f", total) + "/me"
+				return
+		}
+		
+		let splitTotal = total/splitNumber
+		if(splitNumber == 1){
+			splitTotalBill.text = "$" + String(format: "%.2f", total) + " for me, myself and I!"
+		}
+		else{
+			splitTotalBill.text = String(format:"%.2f", splitTotal) + "/per person"
+		}
+		
+		print(splitTotal)
 		print(roundedBillAmount)
 		print(tipAmount)
 	}
+	
 }
 
