@@ -17,4 +17,4 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 
 What I have currently:
 
-![](https://github.com/wongandydev/DaysOfSwift/blob/master/TipCalculator/stage2.gif)
+![](https://github.com/wongandydev/DaysOfSwift/blob/develop/TipCalculator/stage2.gif)
