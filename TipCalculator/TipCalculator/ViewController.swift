@@ -29,13 +29,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
 		// Do any additional setup after loading the view, typically from a nib.
 		balanceTextField.delegate = self
 		splitTextField.delegate = self
+		//tapGestureRecognizer
 	}
-
+	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
 
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		view.endEditing(true) 
+	}
 	func calculateTip(){
 		guard let balance = Double(balanceTextField.text!)
 			else{
