@@ -14,6 +14,7 @@
 		A16267381ECE4C7B008C6254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16267361ECE4C7B008C6254 /* LaunchScreen.storyboard */; };
 		A16267431ECE4C7B008C6254 /* CustomCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16267421ECE4C7B008C6254 /* CustomCollectionViewTests.swift */; };
 		A162674E1ECE4C7B008C6254 /* CustomCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162674D1ECE4C7B008C6254 /* CustomCollectionViewUITests.swift */; };
+		A19461AC1ED269DA00BE9C51 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19461AB1ED269DA00BE9C51 /* RoundedCornersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A16267491ECE4C7B008C6254 /* CustomCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A162674D1ECE4C7B008C6254 /* CustomCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewUITests.swift; sourceTree = "<group>"; };
 		A162674F1ECE4C7B008C6254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19461AB1ED269DA00BE9C51 /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,12 @@
 		A162672C1ECE4C7B008C6254 /* CustomCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				A19461B01ED26A2B00BE9C51 /* Assets */,
+				A19461AF1ED26A1B00BE9C51 /* Controllers */,
 				A162672D1ECE4C7B008C6254 /* AppDelegate.swift */,
+				A19461AE1ED269F700BE9C51 /* Storyboards & Xibs */,
 				A162672F1ECE4C7B008C6254 /* ViewController.swift */,
-				A16267311ECE4C7B008C6254 /* Main.storyboard */,
-				A16267341ECE4C7B008C6254 /* Assets.xcassets */,
-				A16267361ECE4C7B008C6254 /* LaunchScreen.storyboard */,
+				A19461AD1ED269E200BE9C51 /* Views */,
 				A16267391ECE4C7B008C6254 /* Info.plist */,
 			);
 			path = CustomCollectionView;
@@ -123,6 +126,38 @@
 				A162674F1ECE4C7B008C6254 /* Info.plist */,
 			);
 			path = CustomCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		A19461AD1ED269E200BE9C51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A19461AB1ED269DA00BE9C51 /* RoundedCornersView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A19461AE1ED269F700BE9C51 /* Storyboards & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				A16267361ECE4C7B008C6254 /* LaunchScreen.storyboard */,
+				A16267311ECE4C7B008C6254 /* Main.storyboard */,
+			);
+			name = "Storyboards & Xibs";
+			sourceTree = "<group>";
+		};
+		A19461AF1ED26A1B00BE9C51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A19461B01ED26A2B00BE9C51 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A16267341ECE4C7B008C6254 /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +299,7 @@
 			files = (
 				A16267301ECE4C7B008C6254 /* ViewController.swift in Sources */,
 				A162672E1ECE4C7B008C6254 /* AppDelegate.swift in Sources */,
+				A19461AC1ED269DA00BE9C51 /* RoundedCornersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +552,7 @@
 				A16267541ECE4C7B008C6254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A16267551ECE4C7B008C6254 /* Build configuration list for PBXNativeTarget "CustomCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +561,7 @@
 				A16267571ECE4C7B008C6254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A16267581ECE4C7B008C6254 /* Build configuration list for PBXNativeTarget "CustomCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +570,7 @@
 				A162675A1ECE4C7B008C6254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
