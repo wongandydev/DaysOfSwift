@@ -14,27 +14,27 @@
         <scene sceneID="2GM-le-TFW">
             <objects>
                 <collectionViewController id="Zen-Zf-6eI" customClass="PhotoCollectionViewController" customModule="CustomCollectionView" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qll-90-gDy">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="qll-90-gDy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewLayout key="collectionViewLayout" id="TLL-M3-D1R" customClass="Layout" customModule="CustomCollectionView" customModuleProvider="target"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pgp-WB-pBK">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="225" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="198"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCo-Bd-EUM" userLabel="Rounded View" customClass="RoundedCornersView" customModule="CustomCollectionView" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCo-Bd-EUM" userLabel="Rounded View" customClass="RoundedCornersView" customModule="CustomCollectionView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="188"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pF8-vx-HYr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="158"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pF8-vx-HYr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="128"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNF-bV-u1T" userLabel="Caption">
-                                                    <rect key="frame" x="8" y="166" width="59.5" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNF-bV-u1T" userLabel="Caption">
+                                                    <rect key="frame" x="8" y="143" width="59.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="2ei-Hi-lHE"/>
                                                     </constraints>
@@ -42,8 +42,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GQ-UZ-Kb4">
-                                                    <rect key="frame" x="8" y="184" width="46.5" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GQ-UZ-Kb4">
+                                                    <rect key="frame" x="8" y="161" width="46.5" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -74,6 +74,7 @@
                                     <constraint firstItem="cCo-Bd-EUM" firstAttribute="leading" secondItem="pgp-WB-pBK" secondAttribute="leading" id="klf-Bj-1Hc"/>
                                     <constraint firstAttribute="bottom" secondItem="cCo-Bd-EUM" secondAttribute="bottom" id="vd1-0U-vbN"/>
                                 </constraints>
+                                <size key="customSize" width="225" height="198"/>
                             </collectionViewCell>
                         </cells>
                         <connections>

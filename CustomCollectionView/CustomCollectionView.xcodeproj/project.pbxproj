@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1570B8C1ED77BFF00A1D260 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1570B8B1ED77BFF00A1D260 /* Photo.swift */; };
 		A162672E1ECE4C7B008C6254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162672D1ECE4C7B008C6254 /* AppDelegate.swift */; };
 		A16267301ECE4C7B008C6254 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162672F1ECE4C7B008C6254 /* PhotoCollectionViewController.swift */; };
 		A16267331ECE4C7B008C6254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16267311ECE4C7B008C6254 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1570B8B1ED77BFF00A1D260 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		A162672A1ECE4C7B008C6254 /* CustomCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A162672D1ECE4C7B008C6254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A162672F1ECE4C7B008C6254 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A19461AF1ED26A1B00BE9C51 /* Controllers */,
 				A162672D1ECE4C7B008C6254 /* AppDelegate.swift */,
 				A162672F1ECE4C7B008C6254 /* PhotoCollectionViewController.swift */,
+				A1570B8B1ED77BFF00A1D260 /* Photo.swift */,
 				A19461AE1ED269F700BE9C51 /* Storyboards & Xibs */,
 				A19461AD1ED269E200BE9C51 /* Views */,
 				A16267391ECE4C7B008C6254 /* Info.plist */,
@@ -304,6 +307,7 @@
 				A1E587FB1ED508360096927F /* Layout.swift in Sources */,
 				A162672E1ECE4C7B008C6254 /* AppDelegate.swift in Sources */,
 				A19461AC1ED269DA00BE9C51 /* RoundedCornersView.swift in Sources */,
+				A1570B8C1ED77BFF00A1D260 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
