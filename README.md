@@ -20,3 +20,9 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 **Proj_03: May 18, 2017**
 
 1. [03_CustomCollectionView](https://github.com/wongandydev/DaysOfSwift/tree/master/CustomCollectionView)
+
+**Proj_04: May 27, 2017**
+
+1. [04_ForceTouch](https://github.com/wongandydev/DaysOfSwift/tree/master/ForceTouch)
+
+![](https://github.com/wongandydev/DaysOfSwift/blob/master/ForceTouch/forceTouch.gif)
