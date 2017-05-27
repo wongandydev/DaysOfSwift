@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		let shortcut2 = UIMutableApplicationShortcutItem(type: "SearchMusic", localizedTitle: "Search", localizedSubtitle: "Find a track to play", icon: UIApplicationShortcutIcon(type: .search), userInfo: nil)
+		
+		application.shortcutItems = [shortcut2]
 		return true
 	}
 
