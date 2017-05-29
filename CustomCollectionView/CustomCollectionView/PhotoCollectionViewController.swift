@@ -10,7 +10,7 @@ import UIKit
 
 class PhotoCollectionViewController: UICollectionViewController {
 	
-	var Photos = Photo.init(caption: "Caption", comment: "Comment", image: <#T##UIImage#>)
+	var photos = Photo.init(caption: "Caption", comment: "Comment", image: UIImage)
 	
 	override var preferredStatusBarStyle: UIStatusBarStyle{
 		return UIStatusBarStyle.lightContent
@@ -19,6 +19,13 @@ class PhotoCollectionViewController: UICollectionViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		if let patternImage = UIImage(named: "pattern"){
+			view.backgroundColor = UIColor(patternImage: patternImage)
+		}
+		
+		collectionView?.backgroundColor = UIColor.clear
+		collectionView?.contentInset = UIEdgeInsets(top: 23, left: 5, bottom: 10, right: 5)
+		
 		
 	}
 
@@ -26,7 +33,17 @@ class PhotoCollectionViewController: UICollectionViewController {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
+}
 
-
+extension PhotoCollectionViewController {
+	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return 10 //Manual for now this photo.swift is complete
+	}
+	
+	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! photoCell
+		//cell.photo = photos.image
+		return cell
+	}
 }
 
