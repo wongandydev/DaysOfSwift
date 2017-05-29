@@ -26,3 +26,9 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 1. [04_ForceTouch](https://github.com/wongandydev/DaysOfSwift/tree/master/ForceTouch)
 
 ![](https://github.com/wongandydev/DaysOfSwift/blob/master/ForceTouch/forceTouch.gif)
+
+**Proj_05: May 28, 2017**
+
+1. [05_TapCounterw/HoldFunction](https://github.com/wongandydev/DaysOfSwift/tree/master/TapCounterProject)
+
+![](https://github.com/wongandydev/DaysOfSwift/blob/master/tapCounterProject/tapCounter.gif)
