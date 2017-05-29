@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E4EF97C9583D85FAEA850E924B71839403E9AEB7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E4EF97C9583D85FAEA850E924B71839403E9AEB7" : 9223372036854775807,
+    "CD16B0BB58822FE48455406A86A53E6D6C5A3E40" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7C424D36-5F11-4068-B70E-B94AACCBEA9E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E4EF97C9583D85FAEA850E924B71839403E9AEB7" : "DaysOfSwift\/",
+    "CD16B0BB58822FE48455406A86A53E6D6C5A3E40" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TapCounterProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TapCounterProject\/TapCounterProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wongandydev\/androidProjects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CD16B0BB58822FE48455406A86A53E6D6C5A3E40"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wongandydev\/DaysOfSwift\/",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E4EF97C9583D85FAEA850E924B71839403E9AEB7"
+    }
+  ]
+}
