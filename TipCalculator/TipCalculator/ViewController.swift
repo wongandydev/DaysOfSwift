@@ -30,6 +30,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
 		// Do any additional setup after loading the view, typically from a nib.
 		balanceTextField.delegate = self
 		splitTextField.delegate = self
+		
+		
+		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:UIBarMetrics.default)
+		self.navigationController?.navigationBar.shadowImage = UIImage()
+		
 		//tapGestureRecognizer
 		calculateTip()
 	}
