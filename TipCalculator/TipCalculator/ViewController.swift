@@ -18,6 +18,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 	@IBOutlet weak var tipSliderResultLabel: UILabel!
 	@IBOutlet weak var splitTotalBill: UILabel!
 	
+	@IBOutlet weak var tipPercentSegmentControl: UISegmentedControl!
 	@IBAction func tipSliderMoved(_ sender: Any) {
 		let value = tipSlider.value
 		
@@ -30,13 +31,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
 		// Do any additional setup after loading the view, typically from a nib.
 		balanceTextField.delegate = self
 		splitTextField.delegate = self
-		
+		balanceTextField.text = ""
+		splitTextField.text = ""
+		totalLabel.text = "$0.00"
 		
 		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:UIBarMetrics.default)
 		self.navigationController?.navigationBar.shadowImage = UIImage()
 		
-		//tapGestureRecognizer
-		calculateTip()
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -46,6 +47,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		view.endEditing(true)
+		calculateTip()
 	}
 	
 	func calculateTip(){
@@ -53,7 +55,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 			else{
 				balanceTextField.text = ""
 				splitTextField.text = ""
-				totalLabel.text = ""
+				totalLabel.text = "$0.00"
 				return
 		}
 	
