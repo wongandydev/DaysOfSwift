@@ -7,14 +7,14 @@
     "E4EF97C9583D85FAEA850E924B71839403E9AEB7" : 9223372036854775807,
     "CD16B0BB58822FE48455406A86A53E6D6C5A3E40" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8726D868-78B7-40FF-817F-1B808BCF5948",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "687904C0-4FD6-4C52-B83F-61204E0D4382",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "E4EF97C9583D85FAEA850E924B71839403E9AEB7" : "DaysOfSwift\/",
     "CD16B0BB58822FE48455406A86A53E6D6C5A3E40" : ""
   },
-  "DVTSourceControlWorkspaceBlueprintNameKey" : "CustomCollectionView",
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CollectionViewPhotoAlbum",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CustomCollectionView\/CustomCollectionView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CollectionViewPhotoAlbum\/CollectionViewPhotoAlbum.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wongandydev\/androidProjects.git",

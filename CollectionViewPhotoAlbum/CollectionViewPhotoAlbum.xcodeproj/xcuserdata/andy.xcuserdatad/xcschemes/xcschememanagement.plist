@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CustomCollectionView.xcscheme</key>
+		<key>CollectionViewPhotoAlbum.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A16267291ECE4C7B008C6254</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A162673D1ECE4C7B008C6254</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A16267481ECE4C7B008C6254</key>
+		<key>A1662CD51EE247ED0042BF3F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

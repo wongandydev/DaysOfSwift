@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A16267291ECE4C7B008C6254"
-               BuildableName = "CustomCollectionView.app"
-               BlueprintName = "CustomCollectionView"
-               ReferencedContainer = "container:CustomCollectionView.xcodeproj">
+               BlueprintIdentifier = "A1662CD51EE247ED0042BF3F"
+               BuildableName = "CollectionViewPhotoAlbum.app"
+               BlueprintName = "CollectionViewPhotoAlbum"
+               ReferencedContainer = "container:CollectionViewPhotoAlbum.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A162673D1ECE4C7B008C6254"
-               BuildableName = "CustomCollectionViewTests.xctest"
-               BlueprintName = "CustomCollectionViewTests"
-               ReferencedContainer = "container:CustomCollectionView.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A16267481ECE4C7B008C6254"
-               BuildableName = "CustomCollectionViewUITests.xctest"
-               BlueprintName = "CustomCollectionViewUITests"
-               ReferencedContainer = "container:CustomCollectionView.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A16267291ECE4C7B008C6254"
-            BuildableName = "CustomCollectionView.app"
-            BlueprintName = "CustomCollectionView"
-            ReferencedContainer = "container:CustomCollectionView.xcodeproj">
+            BlueprintIdentifier = "A1662CD51EE247ED0042BF3F"
+            BuildableName = "CollectionViewPhotoAlbum.app"
+            BlueprintName = "CollectionViewPhotoAlbum"
+            ReferencedContainer = "container:CollectionViewPhotoAlbum.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A16267291ECE4C7B008C6254"
-            BuildableName = "CustomCollectionView.app"
-            BlueprintName = "CustomCollectionView"
-            ReferencedContainer = "container:CustomCollectionView.xcodeproj">
+            BlueprintIdentifier = "A1662CD51EE247ED0042BF3F"
+            BuildableName = "CollectionViewPhotoAlbum.app"
+            BlueprintName = "CollectionViewPhotoAlbum"
+            ReferencedContainer = "container:CollectionViewPhotoAlbum.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A16267291ECE4C7B008C6254"
-            BuildableName = "CustomCollectionView.app"
-            BlueprintName = "CustomCollectionView"
-            ReferencedContainer = "container:CustomCollectionView.xcodeproj">
+            BlueprintIdentifier = "A1662CD51EE247ED0042BF3F"
+            BuildableName = "CollectionViewPhotoAlbum.app"
+            BlueprintName = "CollectionViewPhotoAlbum"
+            ReferencedContainer = "container:CollectionViewPhotoAlbum.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

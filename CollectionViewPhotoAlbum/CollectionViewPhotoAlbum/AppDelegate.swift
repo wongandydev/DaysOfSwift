@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CustomCollectionView
+//  CollectionViewPhotoAlbum
 //
-//  Created by Andy Wong on 5/18/17.
+//  Created by Andy Wong on 6/2/17.
 //  Copyright © 2017 Andy Wong. All rights reserved.
 //
 
