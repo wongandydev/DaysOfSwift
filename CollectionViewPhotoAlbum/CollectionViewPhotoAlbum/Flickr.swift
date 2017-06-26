@@ -22,7 +22,7 @@
 	
 import UIKit
 
-let apiKey = "2c96c0998c85115fd50f75c5ca2aa4cc"
+let apiKey = "6d9e87babe23de8cb01b557ab054cee6"
 
 class Flickr {
   
