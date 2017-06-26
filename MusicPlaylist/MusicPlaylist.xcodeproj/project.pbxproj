@@ -14,6 +14,8 @@
 		A19EFC5A1F0037D800B63C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19EFC581F0037D800B63C4B /* LaunchScreen.storyboard */; };
 		A19EFC621F008B3A00B63C4B /* playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EFC611F008B3A00B63C4B /* playlist.swift */; };
 		A19EFC641F008B4400B63C4B /* song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EFC631F008B4400B63C4B /* song.swift */; };
+		A1C88F171F008CD50050C963 /* SongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C88F161F008CD50050C963 /* SongsVC.swift */; };
+		A1C88F191F008CE30050C963 /* SongDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C88F181F008CE30050C963 /* SongDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A19EFC5B1F0037D800B63C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19EFC611F008B3A00B63C4B /* playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playlist.swift; sourceTree = "<group>"; };
 		A19EFC631F008B4400B63C4B /* song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = song.swift; sourceTree = "<group>"; };
+		A1C88F161F008CD50050C963 /* SongsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsVC.swift; sourceTree = "<group>"; };
+		A1C88F181F008CE30050C963 /* SongDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,42 @@
 		A19EFC4E1F0037D800B63C4B /* MusicPlaylist */ = {
 			isa = PBXGroup;
 			children = (
-				A19EFC4F1F0037D800B63C4B /* AppDelegate.swift */,
-				A19EFC511F0037D800B63C4B /* ViewController.swift */,
-				A19EFC531F0037D800B63C4B /* Main.storyboard */,
-				A19EFC611F008B3A00B63C4B /* playlist.swift */,
-				A19EFC631F008B4400B63C4B /* song.swift */,
+				A1C88F1C1F008D700050C963 /* UI */,
+				A1C88F1B1F008D5D0050C963 /* Data */,
+				A1C88F1A1F008D4D0050C963 /* ViewControllers */,
 				A19EFC561F0037D800B63C4B /* Assets.xcassets */,
-				A19EFC581F0037D800B63C4B /* LaunchScreen.storyboard */,
 				A19EFC5B1F0037D800B63C4B /* Info.plist */,
+				A19EFC4F1F0037D800B63C4B /* AppDelegate.swift */,
 			);
 			path = MusicPlaylist;
+			sourceTree = "<group>";
+		};
+		A1C88F1A1F008D4D0050C963 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A19EFC511F0037D800B63C4B /* ViewController.swift */,
+				A1C88F161F008CD50050C963 /* SongsVC.swift */,
+				A1C88F181F008CE30050C963 /* SongDetailVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A1C88F1B1F008D5D0050C963 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A19EFC631F008B4400B63C4B /* song.swift */,
+				A19EFC611F008B3A00B63C4B /* playlist.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		A1C88F1C1F008D700050C963 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A19EFC581F0037D800B63C4B /* LaunchScreen.storyboard */,
+				A19EFC531F0037D800B63C4B /* Main.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +175,10 @@
 			files = (
 				A19EFC641F008B4400B63C4B /* song.swift in Sources */,
 				A19EFC521F0037D800B63C4B /* ViewController.swift in Sources */,
+				A1C88F191F008CE30050C963 /* SongDetailVC.swift in Sources */,
 				A19EFC621F008B3A00B63C4B /* playlist.swift in Sources */,
 				A19EFC501F0037D800B63C4B /* AppDelegate.swift in Sources */,
+				A1C88F171F008CD50050C963 /* SongsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +342,7 @@
 				A19EFC601F0037D800B63C4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

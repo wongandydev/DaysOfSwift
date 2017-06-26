@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Playlist-->
         <scene sceneID="xmb-0A-ZSr">
             <objects>
-                <tableViewController id="y2C-sn-F3E" sceneMemberID="viewController">
+                <tableViewController title="Playlist" id="y2C-sn-F3E" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rbL-pg-9lM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
                             <outlet property="delegate" destination="y2C-sn-F3E" id="ifh-Qf-RM1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="1Qf-1E-cJQ">
+                    <navigationItem key="navigationItem" title="Music Playlist" id="1Qf-1E-cJQ">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="gqa-te-eTs"/>
                     </navigationItem>
                 </tableViewController>

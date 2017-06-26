@@ -1,5 +1,5 @@
 //
-//  playlist.swift
+//  SongDetailVC.swift
 //  MusicPlaylist
 //
 //  Created by Andy Wong on 6/25/17.
@@ -7,7 +7,3 @@
 //
 
 import UIKit
-
-struct playlist{
-	var songs = [song].self
-}
