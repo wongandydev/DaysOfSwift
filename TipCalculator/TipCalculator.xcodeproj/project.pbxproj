@@ -194,7 +194,7 @@
 					A1AF95521ECA6726006183AB = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = EURL27CLKV;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					A1AF95661ECA6726006183AB = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -417,11 +417,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = EURL27CLKV;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andywong.TipCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andywong.HandyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd7745f4-bf60-47f1-b840-64159bf50577";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: *";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +433,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = EURL27CLKV;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andywong.TipCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andywong.HandyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd7745f4-bf60-47f1-b840-64159bf50577";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: *";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -516,6 +522,7 @@
 				A1AF957D1ECA6726006183AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1AF957E1ECA6726006183AB /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				A1AF95801ECA6726006183AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1AF95811ECA6726006183AB /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				A1AF95831ECA6726006183AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
