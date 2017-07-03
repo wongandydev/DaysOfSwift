@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-	var playlists: [playlist] = []{
+	var playlists: [playlist] = []{ //what does this do somepletly? 
 		didSet{
 			tableView.reloadData()
+		}
+	}
+	
+	@IBOutlet var playlistTableView: UITableView! {
+		didSet{
+			playlistTableView.delegate = self
+			playlistTableView.dataSource = self
 		}
 	}
 	
