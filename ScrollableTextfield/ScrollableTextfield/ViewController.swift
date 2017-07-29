@@ -9,15 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
+	
+	@IBOutlet weak var scrollView: UIScrollView!
+	
 	@IBOutlet weak var nameTextField: UITextField!
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
 	@IBOutlet weak var confirmPasswordTextField: UITextField!
 	@IBOutlet weak var phoneNumberTextField: UITextField!
 	
+	@IBOutlet weak var loginButton: UIButton!
+	@IBOutlet weak var signupButton: UIButton!
+	var activeField: UITextField? 
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		//Navigation Bar Title + Title Color
+		self.navigationItem.title = "Scrollable Textfield"
+		self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+		
+		//Transparent NavgiationBar
+		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+		self.navigationController?.navigationBar.shadowImage = UIImage()
+		
+		self.scrollView.isScrollEnabled = false 
 		
 		handleDelegates()
 		
@@ -36,6 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 		// Dispose of any resources that can be recreated.
 	}
 
+	//MARK: - Handle Scrollable TextFields.
 	func handleDelegates(){
 		self.nameTextField.delegate = self
 		self.emailTextField.delegate = self
@@ -97,5 +114,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	func textFieldDidEndEditing(_ textField: UITextField) {
 		self.activeField = nil
 	}
+	
+	//Dismiss Keybaord when tapping outside for textfield
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		self.view.endEditing(true)
+	}
+	
+	//Dismiss keyboard when return key is pressed.
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		textField.resignFirstResponder()
+		return true
+	}
+	
+	
 }
 
