@@ -31,4 +31,4 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 
 1. [05_TapCounterw/HoldFunction](https://github.com/wongandydev/DaysOfSwift/tree/master/TapCounterProject)
 
-![](https://github.com/wongandydev/DaysOfSwift/blob/master/tapCounterProject/tapCounter.gif)
+![](https://github.com/wongandydev/DaysOfSwift/blob/master/TapCounterProject/tapCounter.gif)
