@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" textLabel="1M4-3a-qwb" detailTextLabel="HdF-3S-ELB" style="IBUITableViewCellStyleSubtitle" id="mOK-4k-HfF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="Cell" textLabel="1M4-3a-qwb" detailTextLabel="HdF-3S-ELB" style="IBUITableViewCellStyleSubtitle" id="mOK-4k-HfF">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mOK-4k-HfF" id="kYF-Pp-RY1">
@@ -58,7 +58,7 @@
         <scene sceneID="5R7-Yq-O2Z">
             <objects>
                 <navigationController id="fMA-pJ-trr" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xLm-p8-ZIp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xLm-p8-ZIp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.59492417890105465" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
