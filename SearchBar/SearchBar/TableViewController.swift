@@ -35,14 +35,21 @@ class TableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		users = [User(displayName: "Andy", username: "thisusername"),
-		        User(displayName: "Andy", username: "thisusername"),
-		        User(displayName: "Andy", username: "thisusername"),
-				User(displayName: "Andy", username: "thisusername"),
-				User(displayName: "Andy", username: "thisusername"),
-				User(displayName: "Andy", username: "thisusername"),
-				User(displayName: "Andy", username: "thisusername")
+		users = [
+				User(displayName: "TEZLA", username: "unique"),
+		        User(displayName: "Mercedeiez", username: "niqw"),
+		        User(displayName: "Hyunda", username: "andy"),
+				User(displayName: "Toyote", username: "h@ck_er"),
+				User(displayName: "Audi", username: "huh?-_-"),
+				User(displayName: "ASHTON", username: "--___--"),
+				User(displayName: "SPAG BUGATTI", username: "#@(*$)@#*$")
 				]
+	
+		searchController.searchResultsUpdater = self
+		searchController.dimsBackgroundDuringPresentation = false
+		definesPresentationContext = true
+		tableView.tableHeaderView = searchController.searchBar
+		
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -52,21 +59,34 @@ class TableViewController: UITableViewController {
 	
 	//MARK: TableView Delegate 
 	override func numberOfSections(in tableView: UITableView) -> Int {
-		if filiteredUsers.count > 0{
-			return 1
+		if searchController.isActive && searchController.searchBar.text != "" { //This is run so the app actively searches to see if the user is search to see if we should show message.
+			if filiteredUsers.count > 0{
+				self.tableView.backgroundView = nil
+				return 1
+			}
+			else{
+				TableViewHelper.EmptyMessage(message: "Friend not found!", viewController: self)
+				return 0
+			}
 		}
-		else{
-			TableViewHelper.EmptyMessage(message: "Tap Search Bar to search for friends!", viewController: self)
-			return 0
+		else{ //This runs when the app starts since the search bar isn't active.
+			if filiteredUsers.count > 0{
+				return 1
+			}
+			else{
+				TableViewHelper.EmptyMessage(message: "Tap Search Bar \n to search for your friends!", viewController: self)
+				return 0
+			}
 		}
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//		if searchController.isActive && searchController.searchBar.text != "" {
-//			return filiteredUsers.count
-//		}
-//		return 0
-		return users.count
+		if searchController.isActive && searchController.searchBar.text != "" {
+			return filiteredUsers.count
+		}
+		else{
+			return 0
+		}
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -102,4 +122,18 @@ extension UITableViewController
 		}
 	}
 }
+
+extension TableViewController: UISearchResultsUpdating {
+	func updateSearchResults(for searchController: UISearchController) {
+		filterContentForSearchText(searchText: searchController.searchBar.text!)
+	}
+	
+	func filterContentForSearchText(searchText: String, scope: String = "All") {
+		filiteredUsers = users.filter { user in
+			return user.displayName.lowercased().contains(searchText.lowercased());
+		}
+		tableView.reloadData()
+	}
+}
+
 
