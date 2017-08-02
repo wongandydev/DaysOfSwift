@@ -29,6 +29,19 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 
 **Proj_05: May 28, 2017**
 
-1. [05_TapCounterw/HoldFunction](https://github.com/wongandydev/DaysOfSwift/tree/master/TapCounterProject)
+1. [05_TapCounter/HoldFunction](https://github.com/wongandydev/DaysOfSwift/tree/master/TapCounterProject)
 
 ![](https://github.com/wongandydev/DaysOfSwift/blob/master/TapCounterProject/tapCounter.gif)
+<<<<<<< HEAD
+=======
+
+**Proj_06: July 29, 2017**
+1. [06_ScrollableTextField](https://github.com/wongandydev/DaysOfSwift/tree/master/ScrollableTextfield)
+
+<!--Missing GIF-->
+
+**Proj_06: Aug 1, 2017**
+1. [07_Searchbar](https://github.com/wongandydev/DaysOfSwift/tree/master/SearchBar)
+
+![](https://github.com/wongandydev/DaysOfSwift/blob/master/SearchBar/searchbar.gif)
+>>>>>>> develop
