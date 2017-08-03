@@ -51,11 +51,6 @@ class TableViewController: UITableViewController {
 		tableView.tableHeaderView = searchController.searchBar
 		
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		
-	}
 	
 	//MARK: TableView Delegate 
 	override func numberOfSections(in tableView: UITableView) -> Int {
