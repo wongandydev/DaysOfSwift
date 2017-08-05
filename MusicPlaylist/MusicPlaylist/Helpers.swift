@@ -8,6 +8,12 @@
 
 import UIKit
 
+func showErrorAlert(viewController: UIViewController, title: String, message: String){
+	let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+	alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+	
+	viewController.present(alertController, animated: true, completion: nil)
+}
 
 extension UITableViewController{
 	class TableViewHelper {

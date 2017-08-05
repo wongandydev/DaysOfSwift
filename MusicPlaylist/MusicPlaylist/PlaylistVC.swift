@@ -10,7 +10,7 @@ import UIKit
 
 class PlaylistVC: UITableViewController {
 	//MARK: -Properties
-	var playlists: [Playlist] = []{ //what does this do somepletly?
+	var playlists: [Playlist] = []{
 		didSet{
 			tableView.reloadData()
 		}
@@ -28,13 +28,28 @@ class PlaylistVC: UITableViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 	}
+	
 	@IBAction func addPlaylistButtonTapped(_ sender: Any) {
 		let alertController = UIAlertController(title: "Create Playlist", message: "Enter Playlist Title", preferredStyle: .alert)
 		
-		alertController.addTextField(configurationHandler: nil)
+		alertController.addTextField(configurationHandler: {(textField) -> Void in
+			textField.placeholder = "Title";
+			textField.textAlignment = .left
+		})
 		
 		alertController.addAction(UIAlertAction(title: "Add", style: .default , handler: {
 			alert -> Void in
+			
+			let title = alertController.textFields?[0] as! UITextField
+			
+			if title.text != ""{
+				self.playlists.append(Playlist(name: title.text!, timestamp: "No Time"))
+				self.tableView.reloadData()
+			}
+			else{
+				showErrorAlert(viewController: self, title: "Add Error", message: "No title entered. \n Please Try Again.")
+			}
+			
 		}))
 		alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 		
@@ -56,7 +71,7 @@ class PlaylistVC: UITableViewController {
 		return playlists.count
 	}
 	
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "PlaylistCell", for: indexPath)
 		let playlist: Playlist
 		
@@ -64,6 +79,8 @@ class PlaylistVC: UITableViewController {
 		
 		cell.textLabel?.text = playlist.name
 		cell.detailTextLabel?.text = playlist.date
+		
+		return cell
 	}
 
 }
