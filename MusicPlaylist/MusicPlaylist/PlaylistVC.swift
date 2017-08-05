@@ -26,7 +26,8 @@ class PlaylistVC: UITableViewController {
 	//MARK: -Views
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		tableView.separatorStyle = .singleLine
+		tableView.separatorColor = UIColor.black
 	}
 	
 	@IBAction func addPlaylistButtonTapped(_ sender: Any) {
@@ -59,6 +60,8 @@ class PlaylistVC: UITableViewController {
 	//MARK: -TableViewDelegates
 	override func numberOfSections(in tableView: UITableView) -> Int {
 		if playlists.count > 0 {
+			print("came here")
+			self.tableView.backgroundView = nil
 			return 1
 		}
 		else{
