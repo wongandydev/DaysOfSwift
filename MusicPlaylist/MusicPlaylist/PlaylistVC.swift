@@ -28,6 +28,18 @@ class PlaylistVC: UITableViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 	}
+	@IBAction func addPlaylistButtonTapped(_ sender: Any) {
+		let alertController = UIAlertController(title: "Create Playlist", message: "Enter Playlist Title", preferredStyle: .alert)
+		
+		alertController.addTextField(configurationHandler: nil)
+		
+		alertController.addAction(UIAlertAction(title: "Add", style: .default , handler: {
+			alert -> Void in
+		}))
+		alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+		
+		present(alertController, animated: true, completion: nil)
+	}
 	
 	//MARK: -TableViewDelegates
 	override func numberOfSections(in tableView: UITableView) -> Int {
