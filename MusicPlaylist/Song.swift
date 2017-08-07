@@ -7,14 +7,16 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Song{
-	var name: String
-	var artist: String
+class Song: Object{
+	dynamic var name: String = ""
+	dynamic var artist: String = ""
 	
-	init(name: String, artist: String) {
+	convenience init(name: String, artist: String) {
+		self.init()
 		self.name = name
 		self.artist = artist
 	}
-	
+
 }

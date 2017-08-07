@@ -18,6 +18,7 @@
 		A1C7524E1F0AAAC80091AFB4 /* AddSongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7524D1F0AAAC80091AFB4 /* AddSongVC.swift */; };
 		A1C88F171F008CD50050C963 /* SongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C88F161F008CD50050C963 /* SongsVC.swift */; };
 		A1C88F191F008CE30050C963 /* SongDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C88F181F008CE30050C963 /* SongDetailVC.swift */; };
+		A1D166BB1F37F1E4000EC541 /* RealmHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D166BA1F37F1E4000EC541 /* RealmHelpers.swift */; };
 		FB61BFD0C62EE925D0361CFD /* Pods_MusicPlaylist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FCC3D58E6D0821901A3CA3 /* Pods_MusicPlaylist.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		A1C7524D1F0AAAC80091AFB4 /* AddSongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddSongVC.swift; path = ../AddSongVC.swift; sourceTree = "<group>"; };
 		A1C88F161F008CD50050C963 /* SongsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsVC.swift; sourceTree = "<group>"; };
 		A1C88F181F008CE30050C963 /* SongDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetailVC.swift; sourceTree = "<group>"; };
+		A1D166BA1F37F1E4000EC541 /* RealmHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B327BB1F32AF7300DA4A6F /* Helpers.swift */,
+				A1D166BA1F37F1E4000EC541 /* RealmHelpers.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				A1C7524E1F0AAAC80091AFB4 /* AddSongVC.swift in Sources */,
 				A1C88F191F008CE30050C963 /* SongDetailVC.swift in Sources */,
 				A1B327BC1F32AF7300DA4A6F /* Helpers.swift in Sources */,
+				A1D166BB1F37F1E4000EC541 /* RealmHelpers.swift in Sources */,
 				A1B327B91F32AB5D00DA4A6F /* Playlist.swift in Sources */,
 				A1B327B71F32A8BA00DA4A6F /* Song.swift in Sources */,
 				A19EFC501F0037D800B63C4B /* AppDelegate.swift in Sources */,

@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Playlist{
-	var name: String
-	var date: String
-	
-	init(name: String, timestamp: String){
+class Playlist: Object{
+	dynamic var name: String = ""
+	dynamic var date: String = ""
+
+	convenience init(name: String, timestamp: String){
+		self.init()
 		self.name = name
 		self.date = timestamp
 	}
