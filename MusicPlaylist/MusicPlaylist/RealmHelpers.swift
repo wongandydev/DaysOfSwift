@@ -26,8 +26,6 @@ class RealmHelpers{
 	
 	static func retrievePlaylist() -> Results<Playlist> {
 		let realm = try! Realm()
-		print("retrieve Playlist")
-		print(realm.objects(Playlist.self))
 		return realm.objects(Playlist.self)
 	}
 }

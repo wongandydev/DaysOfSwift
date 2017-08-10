@@ -29,7 +29,7 @@ class PlaylistVC: UITableViewController {
 		super.viewDidLoad()
 		playlists = RealmHelpers.retrievePlaylist()
 		tableView.separatorStyle = .singleLine
-		tableView.separatorColor = UIColor.black
+		tableView.separatorColor = UIColor.gray
 	}
 	
 	@IBAction func addPlaylistButtonTapped(_ sender: Any) {
@@ -63,9 +63,7 @@ class PlaylistVC: UITableViewController {
 	
 	//MARK: -TableViewDelegates
 	override func numberOfSections(in tableView: UITableView) -> Int {
-		print(playlists.count)
 		if playlists.count > 0 {
-			print("Update Number of Sections")
 			self.tableView.backgroundView = nil
 			return 1
 		}
@@ -89,6 +87,14 @@ class PlaylistVC: UITableViewController {
 		cell.detailTextLabel?.text = playlist.date
 		
 		return cell
+	}
+	
+	override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+		if editingStyle == .delete{
+			RealmHelpers.deletePlaylist(playlist: playlists[indexPath.row])
+			
+			playlists = RealmHelpers.retrievePlaylist()
+		}
 	}
 
 }
