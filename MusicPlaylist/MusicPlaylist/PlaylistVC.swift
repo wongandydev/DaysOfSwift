@@ -11,7 +11,7 @@ import RealmSwift
 
 class PlaylistVC: UITableViewController {
 	//MARK: -Properties
-	var playlists: Results<Playlist>! {
+	var playlists: Results<Playlist>!{
 		didSet{
 			tableView.reloadData()
 		}
@@ -27,7 +27,7 @@ class PlaylistVC: UITableViewController {
 	//MARK: -Views
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		RealmHelpers.retrievePlaylist()
+		playlists = RealmHelpers.retrievePlaylist()
 		tableView.separatorStyle = .singleLine
 		tableView.separatorColor = UIColor.black
 	}
@@ -47,7 +47,7 @@ class PlaylistVC: UITableViewController {
 			
 			if title.text != ""{
 				let newPlaylist = Playlist(name: title.text!, timestamp: "No Time")
-//				self.playlists.append(newPlaylist)
+				//self.playlists.append(newPlaylist)
 				RealmHelpers.addPlaylist(playlist: newPlaylist)
 				self.tableView.reloadData()
 			}
@@ -63,6 +63,7 @@ class PlaylistVC: UITableViewController {
 	
 	//MARK: -TableViewDelegates
 	override func numberOfSections(in tableView: UITableView) -> Int {
+		print(playlists.count)
 		if playlists.count > 0 {
 			print("Update Number of Sections")
 			self.tableView.backgroundView = nil
