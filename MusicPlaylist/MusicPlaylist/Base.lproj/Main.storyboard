@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="kiF-Zn-m52" kind="show" id="sFW-se-jbb"/>
+                                    <segue destination="kiF-Zn-m52" kind="show" identifier="displayPlaylist" id="sFW-se-jbb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

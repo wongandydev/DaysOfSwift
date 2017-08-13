@@ -9,6 +9,8 @@
 import UIKit
 
 class SongsVC: UITableViewController{
+	
+	var playlistTitle: String = ""
 	var songs: [Song] = [] {
 		didSet{
 			tableView.reloadData()
@@ -33,6 +35,9 @@ class SongsVC: UITableViewController{
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		print("playlist \(playlistTitle)")
+		self.navigationItem.title =  playlistTitle
 		
 		songs = [Song(name: "Song name", artist: "Me")
 		]

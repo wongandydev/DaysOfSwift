@@ -96,6 +96,20 @@ class PlaylistVC: UITableViewController {
 			playlists = RealmHelpers.retrievePlaylist()
 		}
 	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "displayPlaylist"{
+			print("playlist cell tapped")
+			
+			let indexPath = tableView.indexPathForSelectedRow!
+			
+			let playlist = playlists[indexPath.row]
+			
+			let songVC = segue.destination as! SongsVC
+			
+			songVC.playlistTitle = playlist.name
+		}
+	}
 
 }
 
