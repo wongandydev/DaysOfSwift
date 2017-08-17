@@ -108,6 +108,7 @@ class PlaylistVC: UITableViewController {
 			let songVC = segue.destination as! SongsVC
 			
 			songVC.playlistTitle = playlist.name
+			//How do I pass over the songs from the specific playlist... 
 		}
 	}
 

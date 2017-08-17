@@ -28,4 +28,24 @@ class RealmHelpers{
 		let realm = try! Realm()
 		return realm.objects(Playlist.self)
 	}
+	
+	static func addSong(playlist: Playlist, song: Song) {
+		let realm = try! Realm()
+		try! realm.write() {
+			print("Add Song")
+			realm.add(song)
+		}
+	}
+	
+	static func deleteSong(playlist: Playlist, song: Song) {
+		let realm = try! Realm()
+		try! realm.write() {
+			realm.delete(playlist)
+		}
+	}
+	
+	static func retrieveSong() -> Results<Song> {
+		let realm = try! Realm()
+		return realm.objects(Song.self)
+	}
 }

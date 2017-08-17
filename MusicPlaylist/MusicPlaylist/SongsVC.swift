@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SongsVC: UITableViewController{
 	
 	var playlistTitle: String = ""
-	var songs: [Song] = [] {
+	var songs: Results<Song>! {
 		didSet{
 			tableView.reloadData()
 		}
@@ -39,8 +40,7 @@ class SongsVC: UITableViewController{
 		print("playlist \(playlistTitle)")
 		self.navigationItem.title =  playlistTitle
 		
-		songs = [Song(name: "Song name", artist: "Me")
-		]
+		songs = RealmHelpers.retrieveSong()
 	}
 	
 }
