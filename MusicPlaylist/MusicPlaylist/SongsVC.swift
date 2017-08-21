@@ -23,19 +23,23 @@ class SongsVC: UITableViewController{
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 0
+		return songs.count
 	}
 	
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "SongCell", for: indexPath)
 		
 		let song = songs[indexPath.row]
+		
 		cell.textLabel?.text = song.name
 		
+		return cell
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		RealmHelpers.addSong(song: Song(name: "Title", artist: "Hello"))
 		
 		print("playlist \(playlistTitle)")
 		self.navigationItem.title =  playlistTitle

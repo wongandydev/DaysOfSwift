@@ -29,7 +29,7 @@ class RealmHelpers{
 		return realm.objects(Playlist.self)
 	}
 	
-	static func addSong(playlist: Playlist, song: Song) {
+	static func addSong(song: Song) {
 		let realm = try! Realm()
 		try! realm.write() {
 			print("Add Song")
@@ -37,10 +37,10 @@ class RealmHelpers{
 		}
 	}
 	
-	static func deleteSong(playlist: Playlist, song: Song) {
+	static func deleteSong(song: Song) {
 		let realm = try! Realm()
 		try! realm.write() {
-			realm.delete(playlist)
+			realm.delete(song)
 		}
 	}
 	
