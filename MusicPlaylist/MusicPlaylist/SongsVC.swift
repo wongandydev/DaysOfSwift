@@ -18,6 +18,32 @@ class SongsVC: UITableViewController{
 		}
 	}
 	
+	@IBAction func addSongButtonTapped(_ sender: Any) {
+		let alertController = UIAlertController(title: "Add Song", message: "Enter Song name, and artist", preferredStyle: .alert)
+		
+		alertController.addTextField(configurationHandler: {(textField) -> Void in
+			textField.placeholder = "Song Name";
+			textField.textAlignment = .left
+		})
+		
+		alertController.addTextField(configurationHandler: {(textField) -> Void in
+			textField.placeholder = "Artist";
+			textField.textAlignment = .left
+		})
+		
+		alertController.addAction(UIAlertAction(title: "Add Song", style: .default , handler: { alert -> Void in
+			let songName = alertController.textFields?[0] as! UITextField
+			let artist = alertController.textFields?[1] as! UITextField
+			
+			
+			
+		}))
+		
+		alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler: nil))
+		
+		self.present(alertController, animated: true, completion: nil)
+	}
+
 	override func numberOfSections(in tableView: UITableView) -> Int {
 		return 1
 	}

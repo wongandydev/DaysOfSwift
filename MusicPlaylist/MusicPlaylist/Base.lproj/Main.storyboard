@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="676" y="118"/>
         </scene>
-        <!--SongsVC-->
+        <!--Title-->
         <scene sceneID="RQF-1C-e9H">
             <objects>
                 <tableViewController id="kiF-Zn-m52" customClass="SongsVC" customModule="MusicPlaylist" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,6 +93,13 @@
                             <outlet property="delegate" destination="kiF-Zn-m52" id="RcZ-eA-0yB"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="hRg-6C-T7T">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rs4-vq-59k">
+                            <connections>
+                                <action selector="addSongButtonTapped:" destination="kiF-Zn-m52" id="j4m-qe-Y7v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fbj-zz-gha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
