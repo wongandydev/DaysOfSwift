@@ -38,7 +38,7 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 
 ![](https://github.com/wongandydev/DaysOfSwift/blob/master/ScrollableTextfield/scrollableTextfield.gif)
 
-**Proj_06: Aug 1, 2017**
+**Proj_07: Aug 1, 2017**
 1. [07_Searchbar](https://github.com/wongandydev/DaysOfSwift/tree/master/SearchBar)
 
 ![](https://github.com/wongandydev/DaysOfSwift/blob/master/SearchBar/searchbar.gif)
