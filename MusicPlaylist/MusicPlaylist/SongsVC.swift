@@ -35,7 +35,7 @@ class SongsVC: UITableViewController{
 			let songName = alertController.textFields?[0] as! UITextField
 			let artist = alertController.textFields?[1] as! UITextField
 			
-			
+			RealmHelpers.addSong(song: Song(name: songName.text!, artist: artist.text!))
 			
 		}))
 		
@@ -58,6 +58,7 @@ class SongsVC: UITableViewController{
 		let song = songs[indexPath.row]
 		
 		cell.textLabel?.text = song.name
+		cell.detailTextLabel?.text = song.artist
 		
 		return cell
 	}
@@ -65,7 +66,7 @@ class SongsVC: UITableViewController{
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		RealmHelpers.addSong(song: Song(name: "Title", artist: "Hello"))
+		//RealmHelpers.addSong(song: Song(name: "Title", artist: "Hello"))
 		
 		print("playlist \(playlistTitle)")
 		self.navigationItem.title =  playlistTitle

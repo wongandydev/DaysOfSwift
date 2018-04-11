@@ -14,6 +14,7 @@
 		A1AF95611ECA6726006183AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AF955F1ECA6726006183AB /* LaunchScreen.storyboard */; };
 		A1AF956C1ECA6726006183AB /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF956B1ECA6726006183AB /* TipCalculatorTests.swift */; };
 		A1AF95771ECA6726006183AB /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF95761ECA6726006183AB /* TipCalculatorUITests.swift */; };
+		A1D4EFEA2079A1790087FB10 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4EFE92079A1790087FB10 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A1AF95721ECA6726006183AB /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AF95761ECA6726006183AB /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		A1AF95781ECA6726006183AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D4EFE92079A1790087FB10 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A1AF95561ECA6726006183AB /* AppDelegate.swift */,
 				A1AF95581ECA6726006183AB /* ViewController.swift */,
+				A1D4EFE92079A1790087FB10 /* SettingsViewController.swift */,
 				A1AF955A1ECA6726006183AB /* Main.storyboard */,
 				A1AF955D1ECA6726006183AB /* Assets.xcassets */,
 				A1AF955F1ECA6726006183AB /* LaunchScreen.storyboard */,
@@ -194,7 +197,7 @@
 					A1AF95521ECA6726006183AB = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = EURL27CLKV;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					A1AF95661ECA6726006183AB = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -264,6 +267,7 @@
 			files = (
 				A1AF95591ECA6726006183AB /* ViewController.swift in Sources */,
 				A1AF95571ECA6726006183AB /* AppDelegate.swift in Sources */,
+				A1D4EFEA2079A1790087FB10 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +344,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -391,6 +396,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -417,15 +423,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EURL27CLKV;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andywong.HandyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cd7745f4-bf60-47f1-b840-64159bf50577";
-				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: *";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -433,15 +442,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EURL27CLKV;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andywong.HandyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cd7745f4-bf60-47f1-b840-64159bf50577";
-				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: *";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

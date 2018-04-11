@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
 
+	var tipAmount: Float = 0
+	
 	@IBOutlet weak var balanceTextField: UITextField!
 	@IBOutlet weak var tipLabel: UILabel!
 	@IBOutlet weak var splitTextField: UITextField!
@@ -20,12 +22,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
 	
 	@IBOutlet weak var tipPercentSegmentControl: UISegmentedControl!
 	@IBAction func tipSliderMoved(_ sender: Any) {
-		let value = tipSlider.value
+		tipAmount = round(tipSlider.value)
 		
-		tipSliderResultLabel.text = String(format: "%.2f", value) + "%"
+		tipSliderResultLabel.text = String(format: "%.2f", tipAmount) + "%"
 		calculateTip()
 	}
 
+	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -47,6 +51,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		view.endEditing(true)
+		//TODO: I can either have a five segment control to depict each service so good is like 17% and do that or custom with slider. But I find slinder to be annoying
 		calculateTip()
 	}
 	
@@ -60,7 +65,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 		}
 	
 		let roundedBillAmount = round(100*balance)/100
-		let tipAmount = roundedBillAmount * Double(tipSlider.value)/100//percentages(grabbed from slider or text field?
+		let tipAmount = roundedBillAmount * Double(self.tipAmount)/100//percentages(grabbed from slider or text field?
 		let roundedTipAmount = round(100*tipAmount)/100
 		let total = roundedBillAmount + tipAmount
 		tipLabel.text = "$" + String(format: "%.2f", roundedTipAmount)
