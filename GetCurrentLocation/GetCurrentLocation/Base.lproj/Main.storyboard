@@ -19,33 +19,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-80-YIx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="479"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="513"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQG-6z-aYQ">
-                                <rect key="frame" x="60" y="526" width="255" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL2-pd-O8d">
-                                <rect key="frame" x="135" y="596" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.80469242784543515" blue="0.5254740423993447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Get Location">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="locationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4A-aL-zFd"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-8R-fF0">
+                                <rect key="frame" x="2" y="568" width="371" height="98.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQG-6z-aYQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL2-pd-O8d">
+                                        <rect key="frame" x="0.0" y="48.5" width="371" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.80469242784543515" blue="0.5254740423993447" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PGp-2N-sSK"/>
+                                        </constraints>
+                                        <state key="normal" title="Get Location">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="locationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4A-aL-zFd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zL2-pd-O8d" firstAttribute="leading" secondItem="ZVg-8R-fF0" secondAttribute="leading" id="2Sd-eV-uw6"/>
+                                    <constraint firstAttribute="trailing" secondItem="zL2-pd-O8d" secondAttribute="trailing" id="87l-wu-YAm"/>
+                                    <constraint firstItem="fQG-6z-aYQ" firstAttribute="leading" secondItem="ZVg-8R-fF0" secondAttribute="leading" id="dLe-ZV-Vl7"/>
+                                    <constraint firstItem="zL2-pd-O8d" firstAttribute="top" secondItem="fQG-6z-aYQ" secondAttribute="bottom" constant="28" id="pcU-bA-Ob7"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VyW-80-YIx" secondAttribute="bottom" constant="188" id="Msz-Sh-S0Z"/>
-                            <constraint firstItem="VyW-80-YIx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nW0-Hr-Wv8"/>
-                            <constraint firstItem="VyW-80-YIx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tHh-Tw-erd"/>
-                            <constraint firstAttribute="trailing" secondItem="VyW-80-YIx" secondAttribute="trailing" id="ysh-yK-U8e"/>
+                            <constraint firstAttribute="trailing" secondItem="VyW-80-YIx" secondAttribute="trailing" id="L1K-Zs-QCF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZVg-8R-fF0" secondAttribute="bottom" constant="0.5" id="T56-Db-qYb"/>
+                            <constraint firstItem="VyW-80-YIx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U3y-VZ-j5O"/>
+                            <constraint firstItem="VyW-80-YIx" firstAttribute="centerX" secondItem="ZVg-8R-fF0" secondAttribute="centerX" id="WSq-tr-Igd"/>
+                            <constraint firstItem="ZVg-8R-fF0" firstAttribute="top" secondItem="VyW-80-YIx" secondAttribute="bottom" constant="55" id="YQT-Pd-riu"/>
+                            <constraint firstItem="VyW-80-YIx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pG9-zL-Akq"/>
+                            <constraint firstItem="ZVg-8R-fF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="zTg-RP-wKh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
