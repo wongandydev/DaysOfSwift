@@ -42,3 +42,9 @@ Inspired by Allen Wong's [30DaysOfSwift](https://github.com/allenwong/30DaysofSw
 1. [07_Searchbar](https://github.com/wongandydev/DaysOfSwift/tree/master/SearchBar)
 
 ![](https://github.com/wongandydev/DaysOfSwift/blob/master/SearchBar/searchbar.gif)
+
+**Proj_08: Apr 24, 2018**
+1. [08_GetCurrentLocation](https://github.com/wongandydev/DaysOfSwift/tree/master/GetCurrentLocation)
+
+![](https://github.com/wongandydev/DaysOfSwift/blob/master/GetCurrentLocation/GetCurrentLocation.gif)
+
