@@ -10,6 +10,7 @@ import UIKit
 
 class SeperateDataSource: NSObject{
     var array: [String] = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "o"]
+
     var filteredArr: [String] = []
 
     var selectedArray: [String] = []
@@ -23,29 +24,50 @@ class SeperateDataSource: NSObject{
     
         collectionView.reloadData()
     }
+
 }
 
 extension SeperateDataSource: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if isFiltering {
-            return filteredArr.count
+        if section == 0 {
+            return 1
         } else {
-            return array.count
+            if isFiltering {
+                return filteredArr.count
+            } else {
+                return array.count
+            }
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCell", for: indexPath) as! mainCollectionViewCell
-        var array_title: String
+        if indexPath.section == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "selectedCell", for: indexPath) as! mainCollectionViewCell
         
-        if isFiltering {
-            array_title = filteredArr[indexPath.row]
+            let cvc = UICollectionView(frame: CGRect(origin: cell.bounds.origin, size: cell.bounds.size), collectionViewLayout: UICollectionViewLayout())
+            cvc.backgroundColor = .orange
+            cell.addSubview(cvc)
+        
+            return cell
+
         } else {
-            array_title = array[indexPath.row]
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCell", for: indexPath) as! mainCollectionViewCell
+            var array_title: String
+
+            if isFiltering {
+                array_title = filteredArr[indexPath.row]
+            } else {
+                array_title = array[indexPath.row]
+            }
+
+            cell.kTitle.text = array_title
+            cell.backgroundColor = .red
+
+            return cell
         }
-        
-        cell.kTitle.text = array_title
-        
-        return cell
     }
 }

@@ -69,6 +69,21 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.dataSource is SeperateDataSource {
+            let cell = collectionView.cellForItem(at: indexPath)
+            cell?.backgroundColor = .green
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if collectionView.dataSource is SeperateDataSource {
+            let cell = collectionView.cellForItem(at: indexPath)
+            cell?.backgroundColor = .white
+        }
+    }
+    
 }
 
 extension ViewController: UISearchControllerDelegate {
